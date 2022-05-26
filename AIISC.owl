@@ -71,6 +71,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#is_taught_by">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#teaches"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Professor"/>
     </owl:ObjectProperty>
     
 
@@ -95,7 +97,10 @@
 
     <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#staffs -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#staffs"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#staffs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute"/>
+    </owl:ObjectProperty>
     
 
 
