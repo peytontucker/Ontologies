@@ -1,0 +1,514 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kedron/ontologies/2022/4/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/kedron/ontologies/2022/4/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_spokesperson"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_subscribers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#live_player"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event_effects"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_one -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_one">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agent_relationships"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">The identifier of the first agent in a basic agent-agent relationship.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_two -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_two">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agent_relationships"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">The identifier of the second agent in a basic agent-agent relationship.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#creator_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#creator_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_subscribers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#temporal_property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#event_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#event_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event_effects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#event_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#event_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#fname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#fname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#function -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#function">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#geolocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#geolocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#locational_property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#group_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#group_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#group"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#spokesperson"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#identifier"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#identifier">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#intensity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#intensity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event_effects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#interest_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#interest_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#interests"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#lname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#lname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#locational_property -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#locational_property">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#manipulated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#manipulated">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_spokesperson"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agent_relationships"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_subscribers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#manipulator_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#manipulator_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#identifier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#group"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#interests"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#original_destination -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#original_destination">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#platform -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#platform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#player_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#player_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#live_player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#radius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#radius">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#locational_property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#relationship_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#relationship_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#representative -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#representative">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#spokesperson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#sentiment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#sentiment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#spokesperson_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#spokesperson_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_spokesperson"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#spokesperson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#stack_priority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#stack_priority">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#temporal_property -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#temporal_property">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#time_interval -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#time_interval">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#temporal_property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#time_start -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#time_start">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#temporal_property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triad_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triad_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#id"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_subscribers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event_effects"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#trust_score -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#trust_score">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_spokesperson"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agent_relationships"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_subscribers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_spokesperson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent_spokesperson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#relationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agent_relationships -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agent_relationships">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#relationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#basic_agents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_subscribers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#dissemination_subscribers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#relationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#flow_manipulators"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#group"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#information_dissemination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#interests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#interests"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#live_player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#live_player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event_effects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#physical_event_effects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#relationship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#relationship"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#spokesperson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#spokesperson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kedron/ontologies/2022/4/InfoSpread#triads"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

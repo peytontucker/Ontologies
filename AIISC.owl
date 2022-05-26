@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#"
+     xml:base="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AIISC="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#advises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#advises">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Advisor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Faculty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#directs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#directs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#hasFaculty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#hasFaculty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Faculty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#hasStaff -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#hasStaff">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#hasStudents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#hasStudents">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#is_taught_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#is_taught_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#teaches"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#mentors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#mentors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#researches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#researches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Researcher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#staffs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#staffs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Professor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Advisor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Advisor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#MS_Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#MS_Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Mentor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Mentor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#mentors"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#PhD_Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#PhD_Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Researcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Researcher">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#researches"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Undergraduate_Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Undergraduate_Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AIISC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AIISC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Institute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AI_Planning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AI_Planning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Artificial_Intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Artificial_Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Bharath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Bharath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#PhD_Student"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton"/>
+        <researches rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AI_Planning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Biplav -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Biplav">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Faculty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Professor"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Bharath"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Teja"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Vishal"/>
+        <researches rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Artificial_Intelligence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Dr._Amit_Sheth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Dr._Amit_Sheth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Director"/>
+        <directs rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AIISC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Information_Spread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Information_Spread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Mike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Mike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Advisor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Professor"/>
+        <advises rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Vignesh"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton"/>
+        <researches rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Ontology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Ontology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Ontology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Undergraduate_Student"/>
+        <is_taught_by rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Biplav"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Shawna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Shawna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Staff"/>
+        <staffs rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AIISC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Teja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Teja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#MS_Student"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton"/>
+        <researches rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Information_Spread"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Vignesh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Vignesh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Faculty"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Teja"/>
+        <researches rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Information_Spread"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Vishal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Vishal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#PhD_Student"/>
+        <mentors rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton"/>
+        <researches rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#AI_Planning"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
