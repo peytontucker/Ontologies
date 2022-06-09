@@ -1,0 +1,7 @@
+PREFIX aiisc: <http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#>
+
+SELECT ?subject ?age
+WHERE {
+  ?subject a aiisc:Undergraduate_Student .
+  ?subject aiisc:age ?age
+}

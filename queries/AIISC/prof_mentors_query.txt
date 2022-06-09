@@ -1,0 +1,7 @@
+PREFIX aiisc: <http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#>
+
+SELECT ?subject ?object
+WHERE {
+  ?subject a aiisc:Professor .
+  ?subject aiisc:mentors ?object
+}

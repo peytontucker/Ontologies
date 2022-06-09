@@ -1,0 +1,9 @@
+PREFIX aiisc: <http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#>
+
+SELECT ?subject  ?object ?predicate1 ?predicate2
+WHERE {
+  ?subject a aiisc:Faculty .
+  ?object a aiisc:Undergraduate_Student .
+  ?subject ?predicate1 ?object .
+  ?object ?predicate2 ?subject
+}
