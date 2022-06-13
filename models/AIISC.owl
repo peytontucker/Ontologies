@@ -116,6 +116,26 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -353,6 +373,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Peyton">
         <rdf:type rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Undergraduate_Student"/>
         <is_taught_by rdf:resource="http://www.semanticweb.org/peyto/ontologies/2022/4/AIISC#Biplav"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</age>
     </owl:NamedIndividual>
     
 
